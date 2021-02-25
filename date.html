@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>kunhan leikin</title>
+        Päivien erotus
+        <p></p>
+        alkupäivä
+        <input type="date" name="alkupaiva" id="alkupaiva">
+        loppupäivä
+        <input type="date" name="loppupaiva" id="loppupaiva" onchange="dateDiffCalc(loppupaiva)">   
+        
+            
+        
+
+<body>
+    <script type = "text/javascript">
+        function dateDiffCalc(Pe){
+            var dates = new Date("2020/11/07");
+            var datee = new Date("2021/02/24");
+           
+
+             
+           
+            var difference = (datee.getTime() - dates.getTime()) / (1000 * 3600 * 24);
+            
+            document.write("ero " + difference);
+        }    
+        </script>
+</body>
+</head>
+</html>
